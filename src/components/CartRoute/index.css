@@ -1,0 +1,10 @@
+img {
+  width: 300px;
+  display: block;
+  margin: 50px auto;
+}
+
+button {
+  padding: 10px;
+  margin: 10px;
+}
