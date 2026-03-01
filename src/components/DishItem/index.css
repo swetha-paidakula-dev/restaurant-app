@@ -1,0 +1,178 @@
+.modern-dish-card {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px;
+  margin-bottom: 20px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+  list-style: none;
+}
+
+.modern-dish-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+.dish-info {
+  flex: 1;
+  padding-right: 20px;
+}
+
+/* Veg/Non-Veg Indicators */
+.type-badge {
+  width: 18px;
+  height: 18px;
+  border: 2px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.veg {
+  border-color: #0f8a65;
+}
+.non-veg {
+  border-color: #e43b4f;
+}
+
+.type-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+.veg .type-dot {
+  background-color: #0f8a65;
+}
+.non-veg .type-dot {
+  background-color: #e43b4f;
+}
+
+.modern-dish-name {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1a202c;
+  margin: 0 0 5px 0;
+}
+
+.modern-dish-price {
+  font-size: 18px;
+  font-weight: 600;
+  color: #4a5568;
+  margin-bottom: 12px;
+}
+
+.modern-dish-desc {
+  font-size: 14px;
+  color: #718096;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Action Area (Buttons) */
+.action-area {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.modern-controller {
+  display: flex;
+  align-items: center;
+  background: #f7fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 5px;
+}
+
+.modern-controller button {
+  background: white;
+  border: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  color: #0f8a65;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.modern-controller span {
+  padding: 0 15px;
+  font-weight: 700;
+  color: #2d3748;
+}
+
+.modern-add-btn {
+  background-color: #0f8a65;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.modern-add-btn:hover {
+  background-color: #0d7556;
+}
+
+/* Image Styling */
+.image-wrapper {
+  position: relative;
+}
+
+.modern-dish-img {
+  width: 160px;
+  height: 160px;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.calories-pill {
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.9);
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+  color: #e53e3e;
+  border: 1px solid #fed7d7;
+  white-space: nowrap;
+}
+
+.customizable {
+  font-size: 12px;
+  color: #805ad5;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.out-of-stock {
+  color: #e53e3e;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+  .modern-dish-card {
+    flex-direction: column-reverse;
+  }
+  .dish-visuals {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  .modern-dish-img {
+    width: 100%;
+    height: 200px;
+  }
+}

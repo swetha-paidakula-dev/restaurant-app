@@ -1,0 +1,70 @@
+.home-background {
+  min-height: 100vh;
+  background-color: #ffffff;
+}
+
+.spinner-container {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Tab container settings - Side scrolling kosam */
+.tab-container {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  border-bottom: 1px solid #cbd5e1;
+}
+
+.tab-container::-webkit-scrollbar {
+  display: none; /* Scrollbar hide chestundi kani scroll avtundi */
+}
+
+.each-tab-item {
+  flex-grow: 1;
+  flex-shrink: 0;
+  text-align: center;
+  padding: 15px 20px;
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Active tab styles */
+.active-tab-item {
+  border-bottom: 3px solid #ff6347; /* Orange bottom line */
+}
+
+.active-tab-item .tab-category-button {
+  color: #ff6347;
+  font-weight: bold;
+}
+
+.tab-category-button {
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 500;
+  color: #475569;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* Dishes List Layout */
+.dishes-list-container {
+  list-style-type: none;
+  padding: 15px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .dishes-list-container {
+    padding: 30px;
+  }
+}

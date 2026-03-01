@@ -1,0 +1,124 @@
+.nav-header {
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+  padding: 12px 0;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05); /* Soft shadow */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.logo-heading {
+  font-family: 'Bree Serif', serif; /* Font kavalante roboto unchey */
+  font-size: 24px;
+  color: #334155;
+  margin: 0;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+}
+
+.my-orders-text {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 16px;
+  color: #475569;
+  margin: 0 25px 0 0;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.my-orders-text:hover {
+  color: #f06c4e;
+}
+
+/* Cart Icon Styling */
+.cart-link {
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.cart-icon-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.cart-icon {
+  font-size: 30px;
+  color: #475569;
+  transition: transform 0.2s;
+}
+
+.cart-icon:hover {
+  transform: scale(1.1);
+}
+
+.cart-badge {
+  background-color: #f06c4e; /* Premium Orange */
+  color: white;
+  font-size: 11px;
+  font-weight: bold;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+}
+
+/* Premium Logout Button */
+.logout-btn {
+  background-color: #ffffff;
+  border: 2px solid #f06c4e;
+  color: #f06c4e;
+  font-weight: 600;
+  padding: 6px 16px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.logout-btn:hover {
+  background-color: #f06c4e;
+  color: #ffffff;
+}
+
+.logout-icon {
+  margin-left: 8px;
+  font-size: 18px;
+}
+
+/* Responsive */
+@media screen and (max-width: 576px) {
+  .logo-heading {
+    font-size: 18px;
+  }
+  .logout-btn {
+    padding: 8px;
+    border: none;
+  }
+  .logout-icon {
+    margin: 0;
+    font-size: 22px;
+  }
+}
